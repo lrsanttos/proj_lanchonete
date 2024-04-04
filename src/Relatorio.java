@@ -4,8 +4,9 @@ public class Relatorio {
         Produto produto2 = new Produto("Pepsi", 3.50f);
         Pedido pedido1 = new Pedido(123);
 
+        Produto[] produtos = {produto1, produto2};
 
-
+        pedido1.setProdutos(produtos);
         pedido1.print();
 
     }
