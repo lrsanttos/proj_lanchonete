@@ -13,7 +13,11 @@ public class Pedido {
 
     public void print(){
         System.out.println("#------------------#");
-
+        System.out.println("Pedido: " + this.pedido);
+        System.out.println("#------------------#");
+        for(Produto produto : this.produtos){
+            System.out.println("Item: " + produto.getNome() + " | Preço: " + produto.getValor());
+        }
     }
 
     public int getPedido() {
